@@ -25,10 +25,33 @@ import Foundation
  Remember to *commit* and *push* your work regularly – at a minimum after defining each function.
  
  */
-// Begin your work here...
+//---- perimeter of rectangle
+func perimeterOfRectangle(length: Double, width: Double) -> Double {
+    return 2*(length + width)
+}
+
+let result = perimeterOfRectangle(length: 10, width: 5)
+
+print("The perimeter of that rectangle was \(result) square units.")
 
 
+//---- perimeter of Parallelogram
+func perimeterOfParallelogram(length: Double, side: Double) -> Double{
+    return 2*(length + side)
+}
+print("The perimeter of the parallelogram is \(perimeterOfParallelogram(length:10, side:20) )")
 
+//---- area of triangle
+func areaOfTriangle(length: Double, hight: Double) -> Double{
+    return 0.5 * length * hight
+}
+print("The perimeter of the parallelogram is \(areaOfTriangle(length:5, hight: 3) )")
+
+//---- area of circle
+func areaOfCircle(radious: Double) -> Double{
+    return pou * radious * radious
+}
+print("The perimeter of the parallelogram is \(areaOfTriangle(length:5, hight: 3) )")
 /*:
  [Previous: Writing Documentation](@previous) | Page 7
  */
