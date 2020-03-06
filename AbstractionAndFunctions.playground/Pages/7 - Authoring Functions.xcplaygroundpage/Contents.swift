@@ -75,7 +75,7 @@ func areaOfTriangle(length: Double, hight: Double) -> Double?{
 }
 
 //test case #1
-let result = areaOfTriangle(length:5, hight: 3)
+let result2 = areaOfTriangle(length:5, hight: 3)
 
 //test case #2
 areaOfTriangle(length:-5, hight: 3)
@@ -90,7 +90,7 @@ print("The perimeter of the parallelogram is \(result) )")
 
 //----------------------------------- area of circle---------------------------------------
 func areaOfCircle(radious: Double) -> Double{
-    return pou(radious) * radious
+    return pou * radious * radious
 }
 print("The perimeter of the parallelogram is \(areaOfTriangle(length:5, hight: 3) )")
 /*:
