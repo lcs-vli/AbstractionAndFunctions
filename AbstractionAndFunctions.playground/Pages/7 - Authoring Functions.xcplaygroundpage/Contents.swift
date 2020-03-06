@@ -25,29 +25,51 @@ import Foundation
  Remember to *commit* and *push* your work regularly – at a minimum after defining each function.
  
  */
-//---- perimeter of rectangle
-func perimeterOfRectangle(length: Double, width: Double) -> Double {
+//------------------------------ perimeter of rectangle-----------------------------------
+func perimeterOfRectangle(length: Double, width: Double) -> Double？{
+    
+    //ensure we have reasonable values
+    guard length > 0, width > 0 else {
+        //we have one or more bad inputs, so return a nil value
+        return nil
+    }
+    
     return 2*(length + width)
 }
 
+//test case#1
 let result = perimeterOfRectangle(length: 10, width: 5)
 
-print("The perimeter of that rectangle was \(result) square units.")
+//test case #2 length: -5, width: 25, result
+perimeterOfRectangle(length: -5, width: 25)
+
+//test case #3 length: 5, width: -25, result
+perimeterOfRectangle(length: 5, width: -25)
+
+print("The perimeter of that rectangle was \(result！) square units.")
 
 
-//---- perimeter of Parallelogram
+//------------------------------- perimeter of Parallelogram------------------------------
 func perimeterOfParallelogram(length: Double, side: Double) -> Double{
+
     return 2*(length + side)
 }
 print("The perimeter of the parallelogram is \(perimeterOfParallelogram(length:10, side:20) )")
 
-//---- area of triangle
+//---------------------------------- area of triangle-------------------------------------
 func areaOfTriangle(length: Double, hight: Double) -> Double{
+    
+    //ensure we have reasonable values
+    guard length > 0, hight > 0 else {
+        //we have one or more bad inputs, so return a nil value
+        return nil
+    }
+    
     return 0.5 * length * hight
 }
 print("The perimeter of the parallelogram is \(areaOfTriangle(length:5, hight: 3) )")
 
-//---- area of circle
+//----------------------------------- area of circle---------------------------------------
 func areaOfCircle(radious: Double) -> Double{
     return pou * radious * radious
 }

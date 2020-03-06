@@ -26,7 +26,7 @@ func areaOfRectangle(length: Double, width: Double) -> Double? {
     }
     
     //we have reasonale values, so return the area
-    return length * width
+    return length *  width
     
 }
 
